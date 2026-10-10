@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio da Carol Bicalho: projetos, habilidades e experiência em TI e design.">
+  <title>Carol Bicalho | Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="carol-modal" id="carolBoasVindas" aria-hidden="true">
+  <div class="carol-modal__caixa" role="dialog" aria-modal="true" aria-labelledby="carolBoasVindasTitulo">
+    <button class="carol-modal__fechar" type="button" aria-label="Fechar">×</button>
+    <p class="carol-modal__topo">Carol Bicalho</p>
+    <h2 id="carolBoasVindasTitulo">Oi, seja bem-vindo(a).</h2>
+    <p class="carol-modal__texto">Esse é o meu portfólio. Ele ainda está em construção, mas já vale a visita. Fique à vontade para passear.</p>
+    <button class="carol-modal__botao" id="carolBoasVindasEntrar" type="button">Entrar no site</button>
+  </div>
+</div>
+
+<div class="carol-modal" id="affsacoModal" aria-hidden="true">
+  <div class="carol-modal__caixa" role="dialog" aria-modal="true" aria-labelledby="affsacoModalAno">
+    <button class="carol-modal__fechar" type="button" aria-label="Fechar">×</button>
+    <p class="carol-modal__topo">experiência</p>
+    <h2 id="affsacoModalAno"></h2>
+    <p class="carol-modal__texto" id="affsacoModalTexto"></p>
+  </div>
+</div>
+
+<div class="carol-granulado" aria-hidden="true"></div>
+
+<header class="carol-hero" id="inicio">
+  <div class="carol-painel" id="carolPainel" aria-hidden="true"></div>
+
+  <div class="carol-topo">
+    <div class="carol-chaves">
+      <button class="carol-chave" id="carolChaveTema" type="button" role="switch" aria-checked="true" aria-label="Alternar entre modo claro e escuro" title="Modo claro / escuro">
+        <span class="carol-bolinha">
+          <svg class="carol-icone carol-icone--lua" viewBox="0 0 24 24" fill="none"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4 6.8 6.8 0 0 0 20 14.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <svg class="carol-icone carol-icone--sol" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.6M12 18.9v2.6M4.5 12H2M22 12h-2.5M5.6 5.6l1.8 1.8M16.6 16.6l1.8 1.8M18.4 5.6l-1.8 1.8M7.4 16.6l-1.8 1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </span>
+      </button>
+      <button class="carol-chave" id="carolChaveEfeito" type="button" role="switch" aria-checked="true" aria-label="Ligar ou desligar o efeito de movimento" title="Efeito de movimento">
+        <span class="carol-bolinha">
+          <svg class="carol-icone" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l1.9 5.9 6.1.1-4.9 3.8 1.9 5.9-5-3.6-5 3.6 1.9-5.9-4.9-3.8 6.1-.1L12 2.5Z"/></svg>
+        </span>
+      </button>
+    </div>
+
+    <nav class="carol-nav" aria-label="Navegação principal">
+      <a href="#sobre">sobre mim</a>
+      <a href="#habilidades">habilidades</a>
+      <a href="#projetos">projetos</a>
+      <a href="#experiencia">currículo</a>
+      <a href="#contato">contato</a>
+      <a href="https://github.com/carolbicalhohere" target="_blank" rel="noopener" class="carol-nav__git">git<span>hub</span></a>
+    </nav>
+  </div>
+
+  <div class="carol-marca">
+    <h1 class="carol-titulo" id="carolTitulo" aria-label="Carol"><span>C</span><span>A</span><span>R</span><span>O</span><span>L</span></h1>
+    <span class="carol-etiqueta">portfólio</span>
+  </div>
+
+  <p class="carol-texto-hero"><span id="carolDigitado"></span><span class="carol-cursor" aria-hidden="true">▌</span></p>
+
+  <div class="carol-selo" aria-hidden="true">
+    <svg viewBox="0 0 120 46" class="carol-selo__codigo"><g fill="#17161d">
+      <rect x="2" y="4" width="1.6" height="30"/><rect x="6" y="4" width="0.9" height="30"/><rect x="9" y="4" width="2.4" height="30"/><rect x="14" y="4" width="0.9" height="30"/>
+      <rect x="17" y="4" width="1.6" height="30"/><rect x="21" y="4" width="1.6" height="30"/><rect x="25" y="4" width="0.9" height="30"/><rect x="28" y="4" width="2.4" height="30"/>
+      <rect x="33" y="4" width="1.6" height="30"/><rect x="37" y="4" width="0.9" height="30"/><rect x="40" y="4" width="1.6" height="30"/><rect x="44" y="4" width="2.4" height="30"/>
+      <rect x="49" y="4" width="0.9" height="30"/><rect x="52" y="4" width="1.6" height="30"/><rect x="56" y="4" width="0.9" height="30"/><rect x="59" y="4" width="2.4" height="30"/>
+      <rect x="64" y="4" width="1.6" height="30"/><rect x="68" y="4" width="1.6" height="30"/><rect x="72" y="4" width="0.9" height="30"/><rect x="75" y="4" width="2.4" height="30"/>
+      <rect x="80" y="4" width="1.6" height="30"/><rect x="84" y="4" width="0.9" height="30"/><rect x="87" y="4" width="1.6" height="30"/><rect x="91" y="4" width="2.4" height="30"/>
+      <rect x="96" y="4" width="0.9" height="30"/><rect x="99" y="4" width="1.6" height="30"/><rect x="103" y="4" width="2.4" height="30"/><rect x="108" y="4" width="0.9" height="30"/>
+      <rect x="111" y="4" width="1.6" height="30"/><rect x="115" y="4" width="1.6" height="30"/></g></svg>
+    <span class="carol-selo__rotulo">limited edition</span>
+  </div>
+
+  <a class="carol-rolar" href="#sobre" aria-label="Rolar para saber mais"><span></span></a>
+</header>
+
+<div class="carol-faixa" aria-hidden="true">
+  <div class="carol-faixa__trilho">
+    <span>tecnologia ✦ moda ✦ design ✦ colagem ✦ costura ✦ código ✦ tecnologia ✦ moda ✦ design ✦ colagem ✦ costura ✦ código ✦ </span>
+    <span>tecnologia ✦ moda ✦ design ✦ colagem ✦ costura ✦ código ✦ tecnologia ✦ moda ✦ design ✦ colagem ✦ costura ✦ código ✦ </span>
+  </div>
+</div>
+
+<main>
+
+  <section class="carol-secao" id="sobre">
+    <h2 class="carol-secao__titulo carol-revelar">SOBRE MIM</h2>
+    <p class="carol-secao__sub carol-revelar">técnica, designer e artista</p>
+
+    <div class="seila-moldura carol-revelar">
+      <img src="img/foto-carol.jpg" alt="Foto de Carol Bicalho">
+      <span class="seila-lateral seila-lateral--carol" aria-hidden="true">carol</span>
+      <span class="seila-lateral seila-lateral--bicalho" aria-hidden="true">bicalho</span>
+    </div>
+
+    <div class="seila-apresentacao carol-revelar">
+      <p>Olá, sou estudante do Colégio Técnico COTEMIG, com grande interesse pelas áreas de TI e Moda. Sou uma pessoa proativa, curiosa e dedicada, que gosta de aprender por conta própria e está sempre em busca de novos desafios e oportunidades para evoluir.</p>
+      <p>Além da tecnologia, também tenho um lado criativo que faz parte do meu dia a dia. Nas horas vagas, gosto de costurar, criar colagens e desenvolver designs. Acredito que a combinação entre tecnologia e criatividade amplia minhas possibilidades e me permite enxergar projetos de diferentes perspectivas.</p>
+      <p>Neste portfólio, você poderá conhecer um pouco mais sobre minhas competências, projetos e experiências, além de acompanhar meu processo de aprendizado e evolução.</p>
+    </div>
+  </section>
+
+  <section class="carol-secao carol-secao--alt" id="habilidades">
+    <h2 class="carol-secao__titulo carol-revelar">HABILIDADES</h2>
+    <p class="carol-secao__sub carol-revelar">clique para abrir ou fechar cada lista</p>
+
+    <div class="seila-grade carol-revelar">
+      <div class="seila-habilidade is-aberto" id="seilaHard">
+        <button type="button" aria-expanded="true">hard skills</button>
+        <ul>
+          <li>C#</li><li>Python</li><li>html/css</li><li>JavaScript</li><li>PHP</li><li>MySQL</li><li>Excel Pro</li><li>Edição de Vídeos</li><li>Design</li>
+        </ul>
+      </div>
+      <div class="seila-habilidade is-aberto" id="seilaSoft">
+        <button type="button" aria-expanded="true">soft skills</button>
+        <ul>
+          <li>proatividade</li><li>boa comunicação</li><li>facilidade em aprender</li><li>organização</li><li>vontade de crescer</li><li>liderança</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="carol-secao" id="projetos">
+    <h2 class="carol-secao__titulo carol-revelar">PROJETOS</h2>
+    <p class="carol-secao__sub carol-revelar">de TI, passe o mouse e clique para visitar</p>
+
+    <div class="tipoisso-cardapio carol-revelar">
+      <a class="tipoisso-capa" href="https://carolbicalhohere.github.io/vixen-ay/" target="_blank" rel="noopener" aria-label="Projeto Vixen-ay">
+        <img src="imagemvixenay.PNG" alt="Capa do projeto Vixen-ay">
+        <span class="tipoisso-nome">Vixen-ay</span>
+      </a>
+      <a class="tipoisso-capa" href="https://carolbicalhohere.github.io/RooftopRestaurant/index.html" target="_blank" rel="noopener" aria-label="Projeto Rooftop Restaurant">
+        <img src="imagemrooftoprestaurant.PNG" alt="Capa do projeto Rooftop Restaurant">
+        <span class="tipoisso-nome">Rooftop Restaurant</span>
+      </a>
+      <a class="tipoisso-capa" href="https://carolbicalhohere.github.io/Louie---Free-Bootstrap-4-Template-by-Colorlib/" target="_blank" rel="noopener" aria-label="Projeto Luie Smith">
+        <img src="imagemlouiesmith.PNG" alt="Capa do projeto Luie Smith">
+        <span class="tipoisso-nome">Luie Smith</span>
+      </a>
+      <a class="tipoisso-capa" href="https://carolbicalhohere.github.io/tabelaperiodica/" target="_blank" rel="noopener" aria-label="Projeto Tabela Periódica">
+        <img src="imagemtabelaperiodica.PNG" alt="Capa do projeto Tabela Periódica">
+        <span class="tipoisso-nome">Tabela Periódica</span>
+      </a>
+    </div>
+
+    <p class="carol-chamada-git carol-revelar">Quer ver mais? Todo o meu código está no <a href="https://github.com/carolbicalhohere" target="_blank" rel="noopener">GitHub</a>.</p>
+  </section>
+
+  <section class="carol-secao carol-secao--alt" id="experiencia">
+    <h2 class="carol-secao__titulo carol-revelar">EXPERIÊNCIA</h2>
+    <p class="carol-secao__sub carol-revelar">clique em um ano para ver o que rolou</p>
+
+    <div class="affsaco-linha carol-revelar">
+      <button class="affsaco-quadrado affsaco-quadrado--dir" data-ano="2018 a 2023" data-texto="Escreva aqui sua experiência entre 2018 e 2023." type="button">2018–23</button>
+      <button class="affsaco-quadrado affsaco-quadrado--esq" data-ano="2024" data-texto="Escreva aqui sua experiência em 2024." type="button">2024</button>
+      <button class="affsaco-quadrado affsaco-quadrado--dir" data-ano="2025" data-texto="Escreva aqui sua experiência em 2025." type="button">2025</button>
+      <button class="affsaco-quadrado affsaco-quadrado--esq" data-ano="2026" data-texto="Escreva aqui sua experiência em 2026." type="button">2026</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="carol-rodape" id="contato">
+  <div class="carol-rodape__info">
+    <p class="carol-rodape__chamada">Você chegou ao fim, mas não precisa ser <em>definitivo</em>!</p>
+    <p class="carol-rodape__convite">Convido você a entrar em contato comigo e <span>me contar o que achou.</span></p>
+    <div class="carol-rodape__dados">
+      <div><b>Telefone:</b> <a href="tel:+5531991858758">+55 (31) 99185-8758</a></div>
+      <div class="carol-cidade">Belo Horizonte, MG</div>
+      <div><b>E-mail:</b> <a href="mailto:acarolaquinobicalho@gmail.com">acarolaquinobicalho@gmail.com</a></div>
+    </div>
+    <div class="carol-redes">
+      <a href="https://github.com/carolbicalhohere" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+      <a href="https://wa.me/5531991858758" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+      <a href="mailto:acarolaquinobicalho@gmail.com" aria-label="E-mail">@</a>
+    </div>
+  </div>
+
+  <form class="carol-formulario" id="carolFormulario" novalidate>
+    <label for="carolNome">NOME:</label>
+    <input type="text" id="carolNome" name="nome" autocomplete="name">
+    <span class="carol-erro" data-erro="nome"></span>
+
+    <label for="carolTelefone">TELEFONE:</label>
+    <input type="tel" id="carolTelefone" name="telefone" autocomplete="tel" inputmode="tel" placeholder="(31) 99999-9999">
+    <span class="carol-erro" data-erro="telefone"></span>
+
+    <label for="carolEmail">E-MAIL:</label>
+    <input type="email" id="carolEmail" name="email" autocomplete="email">
+    <span class="carol-erro" data-erro="email"></span>
+
+    <label for="carolMensagem">MENSAGEM:</label>
+    <textarea id="carolMensagem" name="mensagem" rows="4"></textarea>
+    <span class="carol-erro" data-erro="mensagem"></span>
+
+    <button class="carol-enviar" type="submit">ENVIAR MENSAGEM</button>
+    <p class="carol-status" id="carolStatus" role="status"></p>
+  </form>
+
+  <p class="carol-rodape__fim">© 2026 Carol Bicalho. Feito à mão, com código e carinho.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
